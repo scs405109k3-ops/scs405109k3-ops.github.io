@@ -1,132 +1,112 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* BODY */
 body {
-  background: #f4f6fc;
+  background-color: #f5f7fa;
   color: #333;
-  transition: 0.3s;
+  line-height: 1.6;
+  padding: 20px;
 }
 
-/* DARK MODE */
-body.dark {
-  background: #121212;
-  color: #eee;
-}
-
-body.dark .content h2 {
-  color: #9aa9ff;
-}
-
-/* DARK BUTTON */
-#darkToggle {
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  padding: 8px 14px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-/* HERO */
-.hero {
-  background: linear-gradient(135deg, #5b74f1, #7b5cff);
+/* HEADER */
+header {
+  background-color: #1e88e5;
   color: white;
-  text-align: center;
-  padding: 70px 20px;
-  animation: fadeDown 1s ease;
-}
-
-.hero h1 {
-  font-size: 38px;
-}
-
-.hero p {
-  margin: 12px 0 30px;
-}
-
-/* DOWNLOAD */
-.download-row {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.indus-badge {
-  width: 180px;
-  transition: transform 0.3s;
-}
-
-.indus-badge:hover {
-  transform: scale(1.1);
-}
-
-.apk-btn {
-  background: white;
-  color: #5b74f1;
-  padding: 12px 22px;
+  padding: 20px;
   border-radius: 8px;
-  border: 2px solid #5b74f1;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* NAVIGATION */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
   text-decoration: none;
+  margin: 0 8px;
   font-weight: bold;
 }
 
-.apk-btn:hover {
-  background: #5b74f1;
-  color: white;
+nav a:hover {
+  text-decoration: underline;
 }
 
-/* CONTENT */
-.content {
+/* MAIN CONTENT */
+main {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
   max-width: 900px;
   margin: auto;
-  padding: 45px 20px;
-  animation: fadeUp 1.2s ease;
 }
 
-.content h2 {
-  color: #5b74f1;
+main h2 {
+  color: #1e88e5;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
-.content ul li,
-.content ol li {
+main p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+main ul {
   margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+main ul li {
   margin-bottom: 8px;
-}
-
-/* SCREENSHOTS */
-.screenshots {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.screenshots img {
-  width: 200px;
-  border-radius: 10px;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 20px;
-  background: #5b74f1;
-  color: white;
+  margin-top: 30px;
+  color: #555;
+  font-size: 0.9rem;
 }
 
-/* ANIMATIONS */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(25px); }
-  to { opacity: 1; transform: translateY(0); }
+/* LINKS */
+a {
+  color: #1e88e5;
 }
 
-@keyframes fadeDown {
-  from { opacity: 0; transform: translateY(-25px); }
-  to { opacity: 1; transform: translateY(0); }
+a:hover {
+  color: #1565c0;
+}
+
+/* RESPONSIVE (MOBILE FRIENDLY) */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  main {
+    padding: 15px;
+  }
 }
