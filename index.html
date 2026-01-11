@@ -3,63 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Study Buddy – AI Homework Helper</title>
-  <meta name="description" content="Study Buddy is a web-based AI homework and study helper for students.">
+  <title>Study Buddy – AI Homework Assistant</title>
+  <meta name="description" content="Study Buddy is an AI-powered homework assistant for students. Get help with questions, notes, reminders, and study planning.">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
 <header>
   <h1>Study Buddy</h1>
-  <p>AI Homework & Study Assistant</p>
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="blog.html">Blog</a> |
-    <a href="faq.html">FAQ</a> |
-    <a href="contact.html">Contact</a> |
-    <a href="privacy-policy.html">Privacy</a> |
-    <a href="terms.html">Terms</a>
-  </nav>
+  <p>Your AI Homework & Study Assistant</p>
 </header>
 
+<nav>
+  <a href="index.html">Home</a>
+  <a href="blog.html">Blog</a>
+  <a href="faq.html">FAQ</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
 <main>
-  <h2>Welcome to Study Buddy</h2>
-  <p>
-    Study Buddy is a web-based educational platform designed to help students
-    with homework, concept understanding, and daily study support.
-  </p>
+  <section>
+    <h2>About Study Buddy</h2>
+    <p>
+      Study Buddy is an AI-powered learning assistant designed to help students
+      with homework, exam preparation, notes, and daily study planning.
+    </p>
+  </section>
 
-  <h2>What We Offer</h2>
-  <ul>
-    <li>Homework guidance</li>
-    <li>Study assistance</li>
-    <li>Student-friendly learning tools</li>
-  </ul>
+  <section>
+    <h2>Key Features</h2>
+    <ul>
+      <li>AI Homework Help</li>
+      <li>Smart Study Notes</li>
+      <li>Task & Exam Reminders</li>
+      <li>Student-Friendly Interface</li>
+    </ul>
+  </section>
 
-  <h2>Web-Based Service</h2>
-  <p>
-    Study Buddy is provided only as an online service.
-    Any mobile app versions are distributed through official app stores only.
-    We do not provide APK downloads.
-  </p>
+  <section>
+    <h2>App Screenshots</h2>
+    <div class="screenshots">
+      <img src="screen1.jpeg" alt="Study Buddy Screenshot 1">
+      <img src="screen2.jpeg" alt="Study Buddy Screenshot 2">
+      <img src="screen3.jpeg" alt="Study Buddy Screenshot 3">
+      <img src="screen4.jpeg" alt="Study Buddy Screenshot 4">
+    </div>
+  </section>
+
+  <section>
+    <h2>Get the App</h2>
+    <p>
+      Study Buddy is available on the official Indus App Store.
+      We do not provide APK downloads on this website.
+    </p>
+
+    <a class="store-btn"
+       href="https://indusapp.store/avqtopzy"
+       target="_blank" rel="noopener">
+      <img src="indus.png" alt="Indus App Store">
+      Available on Indus App Store
+    </a>
+  </section>
+
+  <section class="cookie-box">
+    <p>
+      This website uses cookies to improve user experience.
+      By continuing, you agree to our
+      <a href="privacy-policy.html">Privacy Policy</a>.
+    </p>
+    <button onclick="this.parentElement.style.display='none'">OK</button>
+  </section>
 </main>
 
 <footer>
-  <p>© 2026 Study Buddy. All rights reserved.</p>
+  <p>© 2026 Study Buddy</p>
+  <p>
+    <a href="privacy-policy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms</a>
+  </p>
 </footer>
-
-<!-- COOKIE NOTICE -->
-<div id="cookieNotice">
-  This website uses cookies to improve user experience.
-  <button onclick="acceptCookies()">Accept</button>
-</div>
-
-<script>
-function acceptCookies() {
-  document.getElementById("cookieNotice").style.display = "none";
-}
-</script>
-
 </body>
 </html>
