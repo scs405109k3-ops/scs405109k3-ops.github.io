@@ -3,76 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Study Buddy – AI Homework Assit</title>
-
-  <meta name="description" content="Study Buddy is a web-based AI homework and study helper designed for students to learn better.">
-
+  <title>Study Buddy – AI Homework Helper</title>
+  <meta name="description" content="Study Buddy is a web-based AI homework and study helper for students.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <h1>Study Buddy</h1>
-    <p>AI Homework & Study Assistant for Students</p>
+<header>
+  <h1>Study Buddy</h1>
+  <p>AI Homework & Study Assistant</p>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="blog.html">Blog</a> |
+    <a href="faq.html">FAQ</a> |
+    <a href="contact.html">Contact</a> |
+    <a href="privacy-policy.html">Privacy</a> |
+    <a href="terms.html">Terms</a>
+  </nav>
+</header>
 
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="about.html">About</a> |
-      <a href="contact.html">Contact</a> |
-      <a href="privacy-policy.html">Privacy Policy</a> |
-      <a href="terms.html">Terms</a>
-    </nav>
-  </header>
+<main>
+  <h2>Welcome to Study Buddy</h2>
+  <p>
+    Study Buddy is a web-based educational platform designed to help students
+    with homework, concept understanding, and daily study support.
+  </p>
 
-  <hr>
+  <h2>What We Offer</h2>
+  <ul>
+    <li>Homework guidance</li>
+    <li>Study assistance</li>
+    <li>Student-friendly learning tools</li>
+  </ul>
 
-  <!-- MAIN CONTENT -->
-  <main>
+  <h2>Web-Based Service</h2>
+  <p>
+    Study Buddy is provided only as an online service.
+    Any mobile app versions are distributed through official app stores only.
+    We do not provide APK downloads.
+  </p>
+</main>
 
-    <h2>Welcome to Study Buddy</h2>
-    <p>
-      Study Buddy is a web-based educational platform created to help students
-      with homework, concept understanding, and daily study support.
-    </p>
+<footer>
+  <p>© 2026 Study Buddy. All rights reserved.</p>
+</footer>
 
-    <p>
-      Our goal is to make learning simple, accessible, and stress-free for students,
-      especially school-level learners.
-    </p>
+<!-- COOKIE NOTICE -->
+<div id="cookieNotice">
+  This website uses cookies to improve user experience.
+  <button onclick="acceptCookies()">Accept</button>
+</div>
 
-    <h2>What We Offer</h2>
-    <ul>
-      <li>Homework assistance and guidance</li>
-      <li>Study support tools for students</li>
-      <li>Easy-to-use and student-friendly interface</li>
-    </ul>
-
-    <h2>Web-Based Service</h2>
-    <p>
-      Study Buddy is primarily offered as an online educational service through this website.
-      Users can access learning support directly from their browser.
-    </p>
-
-    <p>
-      Any mobile app versions of Study Buddy, if available, are distributed only through
-      official and trusted app stores. We do not provide direct APK downloads on this website.
-    </p>
-
-    <h2>Who Can Use Study Buddy?</h2>
-    <p>
-      Study Buddy is suitable for students, learners, and anyone looking for academic support.
-      The content provided is for educational purposes only.
-    </p>
-
-  </main>
-
-  <hr>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Study Buddy. All rights reserved.</p>
-  </footer>
+<script>
+function acceptCookies() {
+  document.getElementById("cookieNotice").style.display = "none";
+}
+</script>
 
 </body>
 </html>
